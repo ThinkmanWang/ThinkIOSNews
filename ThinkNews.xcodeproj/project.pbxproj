@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165E6BCD3E464174621D40F0 /* Pods_ThinkNews_ThinkNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718FA8ABC2DC0A0F4879E72E /* Pods_ThinkNews_ThinkNewsUITests.framework */; };
+		6A0A119D2D2807665738691C /* Pods_ThinkNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */; };
 		82A02A5825775E4000988E01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5725775E4000988E01 /* AppDelegate.m */; };
 		82A02A5B25775E4000988E01 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5A25775E4000988E01 /* SceneDelegate.m */; };
 		82A02A5E25775E4000988E01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5D25775E4000988E01 /* ViewController.m */; };
@@ -16,6 +18,7 @@
 		82A02A6925775E4200988E01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A6825775E4200988E01 /* main.m */; };
 		82A02A7325775E4300988E01 /* ThinkNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A7225775E4300988E01 /* ThinkNewsTests.m */; };
 		82A02A7E25775E4300988E01 /* ThinkNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A7D25775E4300988E01 /* ThinkNewsUITests.m */; };
+		F44BBEF76EA2AEEFBBDAB475 /* Pods_ThinkNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338EF362253F286A6DE2C98C /* Pods_ThinkNewsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14E0DD9CF0A45007DE712DCB /* Pods-ThinkNews-ThinkNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNews-ThinkNewsUITests.release.xcconfig"; path = "Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CCADC2BD45085513BB43EC8 /* Pods-ThinkNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNewsTests.release.xcconfig"; path = "Target Support Files/Pods-ThinkNewsTests/Pods-ThinkNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		269BF4BDA10FCAB2B89FF968 /* Pods-ThinkNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNews.debug.xcconfig"; path = "Target Support Files/Pods-ThinkNews/Pods-ThinkNews.debug.xcconfig"; sourceTree = "<group>"; };
+		338EF362253F286A6DE2C98C /* Pods_ThinkNewsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F04BC5E185810B2A73B5481 /* Pods-ThinkNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNews.release.xcconfig"; path = "Target Support Files/Pods-ThinkNews/Pods-ThinkNews.release.xcconfig"; sourceTree = "<group>"; };
+		718FA8ABC2DC0A0F4879E72E /* Pods_ThinkNews_ThinkNewsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkNews_ThinkNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A5325775E4000988E01 /* ThinkNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A5625775E4000988E01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82A02A5725775E4000988E01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +64,8 @@
 		82A02A7925775E4300988E01 /* ThinkNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A7D25775E4300988E01 /* ThinkNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThinkNewsUITests.m; sourceTree = "<group>"; };
 		82A02A7F25775E4300988E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B68A2777860FF284E2AF9D /* Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E969A423D6FE593F8FB14F2E /* Pods-ThinkNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNewsTests.debug.xcconfig"; path = "Target Support Files/Pods-ThinkNewsTests/Pods-ThinkNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A0A119D2D2807665738691C /* Pods_ThinkNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44BBEF76EA2AEEFBBDAB475 /* Pods_ThinkNewsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +89,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165E6BCD3E464174621D40F0 /* Pods_ThinkNews_ThinkNewsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64536E47DF0477A17943FAA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				269BF4BDA10FCAB2B89FF968 /* Pods-ThinkNews.debug.xcconfig */,
+				5F04BC5E185810B2A73B5481 /* Pods-ThinkNews.release.xcconfig */,
+				A2B68A2777860FF284E2AF9D /* Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig */,
+				14E0DD9CF0A45007DE712DCB /* Pods-ThinkNews-ThinkNewsUITests.release.xcconfig */,
+				E969A423D6FE593F8FB14F2E /* Pods-ThinkNewsTests.debug.xcconfig */,
+				1CCADC2BD45085513BB43EC8 /* Pods-ThinkNewsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		82A02A4A25775E4000988E01 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +117,8 @@
 				82A02A7125775E4300988E01 /* ThinkNewsTests */,
 				82A02A7C25775E4300988E01 /* ThinkNewsUITests */,
 				82A02A5425775E4000988E01 /* Products */,
+				64536E47DF0477A17943FAA1 /* Pods */,
+				BDFF6DD4D289A3F8008B997D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +168,16 @@
 			path = ThinkNewsUITests;
 			sourceTree = "<group>";
 		};
+		BDFF6DD4D289A3F8008B997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */,
+				718FA8ABC2DC0A0F4879E72E /* Pods_ThinkNews_ThinkNewsUITests.framework */,
+				338EF362253F286A6DE2C98C /* Pods_ThinkNewsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A02A8225775E4300988E01 /* Build configuration list for PBXNativeTarget "ThinkNews" */;
 			buildPhases = (
+				3C2367FDDE0B604372251458 /* [CP] Check Pods Manifest.lock */,
 				82A02A4F25775E4000988E01 /* Sources */,
 				82A02A5025775E4000988E01 /* Frameworks */,
 				82A02A5125775E4000988E01 /* Resources */,
+				A69DC741AC06598B247E3375 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A02A8525775E4300988E01 /* Build configuration list for PBXNativeTarget "ThinkNewsTests" */;
 			buildPhases = (
+				332CC8F0CDD9BED016C940C6 /* [CP] Check Pods Manifest.lock */,
 				82A02A6A25775E4300988E01 /* Sources */,
 				82A02A6B25775E4300988E01 /* Frameworks */,
 				82A02A6C25775E4300988E01 /* Resources */,
@@ -179,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82A02A8825775E4300988E01 /* Build configuration list for PBXNativeTarget "ThinkNewsUITests" */;
 			buildPhases = (
+				D5B63AE19B6AC350A852305A /* [CP] Check Pods Manifest.lock */,
 				82A02A7525775E4300988E01 /* Sources */,
 				82A02A7625775E4300988E01 /* Frameworks */,
 				82A02A7725775E4300988E01 /* Resources */,
+				F294E8A04EE49AEF7C241E52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +306,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332CC8F0CDD9BED016C940C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkNewsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C2367FDDE0B604372251458 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69DC741AC06598B247E3375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThinkNews/Pods-ThinkNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThinkNews/Pods-ThinkNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThinkNews/Pods-ThinkNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B63AE19B6AC350A852305A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkNews-ThinkNewsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F294E8A04EE49AEF7C241E52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82A02A4F25775E4000988E01 /* Sources */ = {
@@ -438,6 +587,7 @@
 		};
 		82A02A8325775E4300988E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269BF4BDA10FCAB2B89FF968 /* Pods-ThinkNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +605,7 @@
 		};
 		82A02A8425775E4300988E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F04BC5E185810B2A73B5481 /* Pods-ThinkNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,6 +623,7 @@
 		};
 		82A02A8625775E4300988E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969A423D6FE593F8FB14F2E /* Pods-ThinkNewsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +643,7 @@
 		};
 		82A02A8725775E4300988E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCADC2BD45085513BB43EC8 /* Pods-ThinkNewsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +663,7 @@
 		};
 		82A02A8925775E4300988E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B68A2777860FF284E2AF9D /* Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThinkNewsUITests/Info.plist;
@@ -527,6 +681,7 @@
 		};
 		82A02A8A25775E4300988E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14E0DD9CF0A45007DE712DCB /* Pods-ThinkNews-ThinkNewsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThinkNewsUITests/Info.plist;

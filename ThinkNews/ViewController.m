@@ -6,6 +6,8 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking/AFNetworking.h>
+#import <TYCyclePagerView/TYCyclePagerView.h>
 
 @interface ViewController ()
 
