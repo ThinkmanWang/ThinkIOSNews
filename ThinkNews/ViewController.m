@@ -20,11 +20,28 @@
     // Do any additional setup after loading the view.
     
     NSLog(@"viewDidLoad");
+    [self initButton];
 }
 
 #pragma mark - init
 
-//-(void) initBanner {
+-(void) onBtnClicked:(id)sender {
+    NSLog(@"On button click");
+}
+
+
+-(void) initButton {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+
+    btn.frame = CGRectMake(0, 100, 90, 35);
+    [btn setTitle:@"ZoomIn" forState:UIControlStateNormal];
+    [btn setTitle:@"ZoomIn" forState:UIControlStateHighlighted];
+    [btn addTarget:self action:@selector(onBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btn];
+}
+
+-(void) initBanner {
 //    TYCyclePagerView *pagerView = [[TYCyclePagerView alloc]init];
 //    pagerView.layer.borderWidth = 1;
 //    pagerView.isInfiniteLoop = YES;
@@ -35,6 +52,6 @@
 //    [pagerView registerClass:[TYCyclePagerViewCell class] forCellWithReuseIdentifier:@"cellId"];
 //    [self.view addSubview:pagerView];
 //    m_pBanner = pagerView;
-//}
+}
 
 @end

@@ -13,6 +13,8 @@
 }
 
 -(void) initBanner;
+-(void) zoomInAction:(id)sender;
+-(void) initButton;
 
 @end
 
