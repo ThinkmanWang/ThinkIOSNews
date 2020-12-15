@@ -10,6 +10,7 @@
 		165E6BCD3E464174621D40F0 /* Pods_ThinkNews_ThinkNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718FA8ABC2DC0A0F4879E72E /* Pods_ThinkNews_ThinkNewsUITests.framework */; };
 		6A0A119D2D2807665738691C /* Pods_ThinkNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */; };
 		8202091F2588A160007F8AFE /* TYCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202091E2588A160007F8AFE /* TYCyclePagerViewCell.m */; };
+		820209242588B4A9007F8AFE /* img in Resources */ = {isa = PBXBuildFile; fileRef = 820209232588B4A9007F8AFE /* img */; };
 		82A02A5825775E4000988E01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5725775E4000988E01 /* AppDelegate.m */; };
 		82A02A5B25775E4000988E01 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5A25775E4000988E01 /* SceneDelegate.m */; };
 		82A02A5E25775E4000988E01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5D25775E4000988E01 /* ViewController.m */; };
@@ -49,6 +50,7 @@
 		7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8202091D2588A160007F8AFE /* TYCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCyclePagerViewCell.h; sourceTree = "<group>"; };
 		8202091E2588A160007F8AFE /* TYCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCyclePagerViewCell.m; sourceTree = "<group>"; };
+		820209232588B4A9007F8AFE /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		82A02A5325775E4000988E01 /* ThinkNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A5625775E4000988E01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82A02A5725775E4000988E01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		82A02A5525775E4000988E01 /* ThinkNews */ = {
 			isa = PBXGroup;
 			children = (
+				820209232588B4A9007F8AFE /* img */,
 				8202091C2588A116007F8AFE /* view */,
 				82A02A5625775E4000988E01 /* AppDelegate.h */,
 				82A02A5725775E4000988E01 /* AppDelegate.m */,
@@ -297,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820209242588B4A9007F8AFE /* img in Resources */,
 				82A02A6625775E4200988E01 /* LaunchScreen.storyboard in Resources */,
 				82A02A6325775E4200988E01 /* Assets.xcassets in Resources */,
 				82A02A6125775E4000988E01 /* Main.storyboard in Resources */,

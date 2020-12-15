@@ -17,7 +17,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
-        [self addLabel];
+        [self addImage];
     }
     return self;
 }
@@ -38,6 +38,15 @@
     label.font = [UIFont systemFontOfSize:18];
     [self addSubview:label];
     _label = label;
+}
+
+- (void)addImage {
+    UIImage* banner = [UIImage imageNamed:@"img/banner.png"];
+    UIImageView* image = [[UIImageView alloc] initWithImage:banner];
+    image.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+    [self addSubview:image];
+    
+    _image = image;
 }
 
 - (void)layoutSubviews {

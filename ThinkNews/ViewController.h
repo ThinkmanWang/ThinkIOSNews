@@ -9,7 +9,6 @@
 #import <TYCyclePagerView/TYCyclePagerView.h>
 
 @interface ViewController : UIViewController {
-    TYCyclePagerView* m_pBanner;
 }
 
 -(void) zoomInAction:(id)sender;

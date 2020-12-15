@@ -11,5 +11,6 @@
 @interface TYCyclePagerViewCell : UICollectionViewCell
 
 @property (nonatomic, weak, readonly) UILabel *label;
+@property UIImageView* image;
 
 @end
