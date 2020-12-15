@@ -25,7 +25,7 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
         self.backgroundColor = [UIColor clearColor];
-        [self addLabel];
+        [self addImage];
     }
     return self;
 }
@@ -42,6 +42,11 @@
 
 - (void)addImage {
     UIImage* banner = [UIImage imageNamed:@"img/banner.png"];
+    
+//    NSURL *url = [NSURL URLWithString:path];
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//    UIImage *img = [[UIImage alloc] initWithData:data];
+    
     UIImageView* image = [[UIImageView alloc] initWithImage:banner];
     image.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     [self addSubview:image];
