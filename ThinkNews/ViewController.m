@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import <TYCyclePagerView/TYCyclePagerView.h>
+#import <WMZDialog/WMZDialog.h>
 
 @interface ViewController ()
 
@@ -42,6 +43,7 @@
     
     [self presentViewController:alert animated:YES completion:nil];
 }
+
 
 
 -(void) initButton {

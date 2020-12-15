@@ -9,6 +9,7 @@ target 'ThinkNews' do
   pod 'AFNetworking', '~> 2.5'
   pod 'TYCyclePagerView'
   pod 'YTKNetwork'
+  pod 'WMZDialog',inhibit_warnings: true
 
 
   target 'ThinkNewsTests' do
