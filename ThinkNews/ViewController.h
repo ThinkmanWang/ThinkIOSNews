@@ -12,7 +12,6 @@
     TYCyclePagerView* m_pBanner;
 }
 
--(void) initBanner;
 -(void) zoomInAction:(id)sender;
 -(void) initButton;
 
