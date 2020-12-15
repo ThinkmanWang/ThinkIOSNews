@@ -85,8 +85,8 @@
     //pageControl.numberOfPages = _datas.count;
     pageControl.currentPageIndicatorSize = CGSizeMake(6, 6);
     pageControl.pageIndicatorSize = CGSizeMake(12, 6);
-    pageControl.currentPageIndicatorTintColor = [UIColor redColor];
-    pageControl.pageIndicatorTintColor = [UIColor grayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
 //    pageControl.pageIndicatorImage = [UIImage imageNamed:@"Dot"];
 //    pageControl.currentPageIndicatorImage = [UIImage imageNamed:@"DotSelected"];
 //    pageControl.contentInset = UIEdgeInsetsMake(0, 20, 0, 20);
@@ -133,7 +133,8 @@
 
 - (TYCyclePagerViewLayout *)layoutForPagerView:(TYCyclePagerView *)pageView {
     TYCyclePagerViewLayout *layout = [[TYCyclePagerViewLayout alloc]init];
-    layout.itemSize = CGSizeMake(CGRectGetWidth(pageView.frame)*0.8, CGRectGetHeight(pageView.frame)*0.8);
+//    layout.itemSize = CGSizeMake(CGRectGetWidth(pageView.frame)*0.8, CGRectGetHeight(pageView.frame)*0.8);
+    layout.itemSize = CGSizeMake(CGRectGetWidth(pageView.frame), CGRectGetHeight(pageView.frame));
     layout.itemSpacing = 15;
     //layout.minimumAlpha = 0.3;
 //    layout.itemHorizontalCenter = _horCenterSwitch.isOn;
