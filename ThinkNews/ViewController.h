@@ -6,9 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TYCyclePagerView/TYCyclePagerView.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    TYCyclePagerView* m_pBanner;
+}
 
+-(void) initBanner;
 
 @end
 
