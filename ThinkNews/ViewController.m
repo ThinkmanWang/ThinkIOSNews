@@ -63,8 +63,8 @@
 - (void)addPageControl {
     TYPageControl *pageControl = [[TYPageControl alloc]init];
     //pageControl.numberOfPages = _datas.count;
-    pageControl.currentPageIndicatorSize = CGSizeMake(6, 6);
-    pageControl.pageIndicatorSize = CGSizeMake(12, 6);
+    pageControl.currentPageIndicatorSize = CGSizeMake(8, 8);
+    pageControl.pageIndicatorSize = CGSizeMake(6, 6);
     pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
     pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
 //    pageControl.pageIndicatorImage = [UIImage imageNamed:@"Dot"];
