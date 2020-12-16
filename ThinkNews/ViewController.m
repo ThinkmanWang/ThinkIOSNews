@@ -42,6 +42,9 @@
 
 -(void) initView {
     
+    UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
+
+    
     [self initPagerView];
     [self initPageControl];
     [self initData];
