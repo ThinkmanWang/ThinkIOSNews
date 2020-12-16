@@ -86,7 +86,7 @@
         NSLayoutAttributeCenterX multiplier:1.0 constant:60.0f];
 
     /*7. Constraint to position RightButton's Y*/
-    rightButtonXConstraint.priority = UILayoutPriorityDefaultHigh;
+//    rightButtonXConstraint.priority = UILayoutPriorityDefaultHigh;
     NSLayoutConstraint *centerYMyConstraint = [NSLayoutConstraint constraintWithItem:self.rightButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f];
     [self.view addConstraints:@[centerYMyConstraint, rightButtonXConstraint]];
 
@@ -139,7 +139,7 @@
         attribute: NSLayoutAttributeLeft
         multiplier:1.0 constant:0.0f];
 
-    buttonXConstraint.priority = UILayoutPriorityDefaultHigh;
+//    buttonXConstraint.priority = UILayoutPriorityDefaultHigh;
     NSLayoutConstraint *buttonYConstraint = [NSLayoutConstraint
         constraintWithItem: btn1
         attribute: NSLayoutAttributeTop
