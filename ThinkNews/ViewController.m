@@ -114,14 +114,34 @@
 }
 
 -(void) initButton {
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
-    btn.frame = CGRectMake(0, 0, 90, 35);
-    [btn setTitle:@"ZoomIn" forState:UIControlStateNormal];
-    [btn setTitle:@"ZoomIn" forState:UIControlStateHighlighted];
-    [btn addTarget:self action:@selector(onBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    btn1.translatesAutoresizingMaskIntoConstraints = NO;
+    [btn1 setTitle:@"ZoomIn" forState:UIControlStateNormal];
+    [btn1 setTitle:@"ZoomIn" forState:UIControlStateHighlighted];
+    [btn1 addTarget:self action:@selector(onBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:btn];
+    [self.view addSubview:btn1];
+    
+    
+    NSLayoutConstraint *buttonXConstraint = [NSLayoutConstraint
+        constraintWithItem:btn1
+        attribute: NSLayoutAttributeLeft
+        relatedBy: NSLayoutRelationEqual
+        toItem:self.view
+        attribute: NSLayoutAttributeLeft multiplier:1.0 constant:0.0f];
+
+    /*7. Constraint to position RightButton's Y*/
+    buttonXConstraint.priority = UILayoutPriorityDefaultHigh;
+    NSLayoutConstraint *buttonYConstraint = [NSLayoutConstraint constraintWithItem:btn1
+        attribute:NSLayoutAttributeTop
+        relatedBy:NSLayoutRelationEqual
+        toItem:self.pageControl
+        attribute:NSLayoutAttributeBottom
+        multiplier:1.0f constant:0.0f];
+    [self.view addConstraints:@[buttonXConstraint, buttonYConstraint]];
+    
+    
 }
 
 - (void)initPagerView {
