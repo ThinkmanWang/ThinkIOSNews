@@ -128,17 +128,19 @@
         constraintWithItem:btn1
         attribute: NSLayoutAttributeLeft
         relatedBy: NSLayoutRelationEqual
-        toItem:self.view
-        attribute: NSLayoutAttributeLeft multiplier:1.0 constant:0.0f];
+        toItem: self.view
+        attribute: NSLayoutAttributeLeft
+        multiplier:1.0 constant:0.0f];
 
     /*7. Constraint to position RightButton's Y*/
     buttonXConstraint.priority = UILayoutPriorityDefaultHigh;
-    NSLayoutConstraint *buttonYConstraint = [NSLayoutConstraint constraintWithItem:btn1
-        attribute:NSLayoutAttributeTop
-        relatedBy:NSLayoutRelationEqual
-        toItem:self.pageControl
-        attribute:NSLayoutAttributeBottom
-        multiplier:1.0f constant:0.0f];
+    NSLayoutConstraint *buttonYConstraint = [NSLayoutConstraint
+        constraintWithItem: btn1
+        attribute: NSLayoutAttributeTop
+        relatedBy: NSLayoutRelationEqual
+        toItem: self.pageControl
+        attribute: NSLayoutAttributeBottom
+        multiplier: 1.0f constant: 0.0f];
     [self.view addConstraints:@[buttonXConstraint, buttonYConstraint]];
     
     
