@@ -56,7 +56,7 @@
 
 - (void)addPagerView {
     TYCyclePagerView *pagerView = [[TYCyclePagerView alloc]init];
-    pagerView.layer.borderWidth = 1;
+    pagerView.layer.borderWidth = 0;
     pagerView.isInfiniteLoop = YES;
     pagerView.autoScrollInterval = 3.0;
     pagerView.dataSource = self;
@@ -64,12 +64,12 @@
     // registerClass or registerNib
     [pagerView registerClass:[TYCyclePagerViewCell class] forCellWithReuseIdentifier:@"cellId"];
     [self.view addSubview:pagerView];
-    _pagerView = pagerView;
+    self.pagerView = pagerView;
 }
 
 - (void)addPageControl {
     TYPageControl *pageControl = [[TYPageControl alloc]init];
-    //pageControl.numberOfPages = _datas.count;
+    //pageControl.numberOfPages = self.datas.count;
     pageControl.currentPageIndicatorSize = CGSizeMake(8, 8);
     pageControl.pageIndicatorSize = CGSizeMake(6, 6);
     pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
@@ -80,14 +80,14 @@
 //    pageControl.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
 //    pageControl.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 //    [pageControl addTarget:self action:@selector(pageControlValueChangeAction:) forControlEvents:UIControlEventValueChanged];
-    [_pagerView addSubview:pageControl];
-    _pageControl = pageControl;
+    [self.pagerView addSubview:pageControl];
+    self.pageControl = pageControl;
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    _pagerView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 200);
-    _pageControl.frame = CGRectMake(0, CGRectGetHeight(_pagerView.frame) - 26, CGRectGetWidth(_pagerView.frame), 26);
+    self.pagerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetWidth(self.view.frame) / 2);
+    self.pageControl.frame = CGRectMake(0, CGRectGetHeight(self.pagerView.frame) - 26, CGRectGetWidth(self.pagerView.frame), 26);
 }
 
 - (void)loadData {
@@ -99,21 +99,21 @@
         }
         [datas addObject:[UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:arc4random()%255/255.0]];
     }
-    _datas = [datas copy];
-    _pageControl.numberOfPages = _datas.count;
-    [_pagerView reloadData];
-    //[_pagerView scrollToItemAtIndex:3 animate:YES];
+    self.datas = [datas copy];
+    self.pageControl.numberOfPages = self.datas.count;
+    [self.pagerView reloadData];
+    //[self.pagerView scrollToItemAtIndex:3 animate:YES];
 }
 
 
 #pragma mark - TYCyclePagerViewDataSource
 - (NSInteger)numberOfItemsInPagerView:(TYCyclePagerView *)pageView {
-    return _datas.count;
+    return self.datas.count;
 }
 
 - (UICollectionViewCell *)pagerView:(TYCyclePagerView *)pagerView cellForItemAtIndex:(NSInteger)index {
     TYCyclePagerViewCell *cell = [pagerView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndex:index];
-    cell.backgroundColor = _datas[index];
+    cell.backgroundColor = self.datas[index];
     cell.label.text = [NSString stringWithFormat:@"index->%ld",index];
     
 //    [cell.label targetForAction:@selector(onBannerClicked:) withSender:self];
@@ -128,15 +128,15 @@
     layout.itemSize = CGSizeMake(CGRectGetWidth(pageView.frame), CGRectGetHeight(pageView.frame));
     layout.itemSpacing = 15;
     //layout.minimumAlpha = 0.3;
-//    layout.itemHorizontalCenter = _horCenterSwitch.isOn;
+//    layout.itemHorizontalCenter = self.horCenterSwitch.isOn;
     return layout;
 }
 
 #pragma mark - events
 
 - (void)pagerView:(TYCyclePagerView *)pageView didScrollFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex {
-    _pageControl.currentPage = toIndex;
-    //[_pageControl setCurrentPage:newIndex animate:YES];
+    self.pageControl.currentPage = toIndex;
+    //[self.pageControl setCurrentPage:newIndex animate:YES];
     NSLog(@"%ld ->  %ld",fromIndex,toIndex);
 }
 
