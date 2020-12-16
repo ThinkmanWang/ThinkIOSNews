@@ -30,7 +30,8 @@
     controller.view.backgroundColor = [UIColor whiteColor];
     
     [self.m_navController pushViewController:controller animated:YES];
-    [self.window addSubview:self.m_navController.view];
+//    [self.window addSubview:self.m_navController.view];
+    [self.window setRootViewController:self.m_navController];
     
     [self.window makeKeyAndVisible];
     
