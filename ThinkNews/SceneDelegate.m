@@ -10,7 +10,7 @@
 #import "ViewController.h"
 
 @interface SceneDelegate ()
-
+@property (strong, nonatomic) UINavigationController *m_navController;
 @end
 
 @implementation SceneDelegate
@@ -21,12 +21,21 @@
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     
+    self.m_navController = [[UINavigationController alloc] init];
+    [self.m_navController setNavigationBarHidden:YES];
+    
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    
     ViewController *controller = [[ViewController alloc] init];
     controller.view.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = controller;
-//    self.window.rootViewController.preferredContentSize = CGSizeMake(600, 800);
+    
+    [self.m_navController pushViewController:controller animated:YES];
+    [self.window addSubview:self.m_navController.view];
+    
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"Navframe Height=%f",
+            self.m_navController.navigationBar.frame.size.height);
 }
 
 
