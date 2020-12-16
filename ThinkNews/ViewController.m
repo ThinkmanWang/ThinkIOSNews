@@ -127,7 +127,7 @@
     return layout;
 }
 
-#pragma mark - action
+#pragma mark - events
 
 - (void)pagerView:(TYCyclePagerView *)pageView didScrollFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex {
     _pageControl.currentPage = toIndex;
@@ -138,48 +138,6 @@
 - (void)pagerView:(TYCyclePagerView *)pageView didSelectedItemCell:(__kindof UICollectionViewCell *)cell atIndex:(NSInteger)index {
     NSLog(@"Open banner ad at position: %ld", index);
 }
-
-//- (IBAction)switchValueChangeAction:(UISwitch *)sender {
-//    if (sender.tag == 0) {
-//        _pagerView.isInfiniteLoop = sender.isOn;
-//        [_pagerView updateData];
-//    }else if (sender.tag == 1) {
-//        _pagerView.autoScrollInterval = sender.isOn ? 3.0:0;
-//    }else if (sender.tag == 2) {
-//        _pagerView.layout.itemHorizontalCenter = sender.isOn;
-//        [UIView animateWithDuration:0.3 animations:^{
-//            [_pagerView setNeedUpdateLayout];
-//        }];
-//    }
-//}
-//
-//- (IBAction)sliderValueChangeAction:(UISlider *)sender {
-//    if (sender.tag == 0) {
-//        _pagerView.layout.itemSize = CGSizeMake(CGRectGetWidth(_pagerView.frame)*sender.value, CGRectGetHeight(_pagerView.frame)*sender.value);
-//        [_pagerView setNeedUpdateLayout];
-//    }else if (sender.tag == 1) {
-//        _pagerView.layout.itemSpacing = 30*sender.value;
-//        [_pagerView setNeedUpdateLayout];
-//    }else if (sender.tag == 2) {
-//        _pageControl.pageIndicatorSize = CGSizeMake(6*(1+sender.value), 6*(1+sender.value));
-//        _pageControl.currentPageIndicatorSize = CGSizeMake(8*(1+sender.value), 8*(1+sender.value));
-//        _pageControl.pageIndicatorSpaing = (1+sender.value)*10;
-//    }
-//}
-//
-//- (IBAction)buttonAction:(UIButton *)sender {
-//    _pagerView.layout.layoutType = sender.tag;
-//    [_pagerView setNeedUpdateLayout];
-//}
-//
-//- (void)pageControlValueChangeAction:(TYPageControl *)sender {
-//    NSLog(@"pageControlValueChangeAction: %ld",sender.currentPage);
-//}
-//
-//- (void)didReceiveMemoryWarning {
-//    [super didReceiveMemoryWarning];
-//    // Dispose of any resources that can be recreated.
-//}
 
 -(void) onBtnClicked:(id)sender {
     NSLog(@"On button click");
