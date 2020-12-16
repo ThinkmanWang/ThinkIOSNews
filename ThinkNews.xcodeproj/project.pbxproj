@@ -18,6 +18,7 @@
 		82A02A6925775E4200988E01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A6825775E4200988E01 /* main.m */; };
 		82A02A7325775E4300988E01 /* ThinkNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A7225775E4300988E01 /* ThinkNewsTests.m */; };
 		82A02A7E25775E4300988E01 /* ThinkNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A7D25775E4300988E01 /* ThinkNewsUITests.m */; };
+		82DA6B33258A0F080054FD38 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DA6B32258A0F080054FD38 /* ListViewController.m */; };
 		F44BBEF76EA2AEEFBBDAB475 /* Pods_ThinkNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338EF362253F286A6DE2C98C /* Pods_ThinkNewsTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		82A02A7925775E4300988E01 /* ThinkNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A7D25775E4300988E01 /* ThinkNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThinkNewsUITests.m; sourceTree = "<group>"; };
 		82A02A7F25775E4300988E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DA6B31258A0F080054FD38 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		82DA6B32258A0F080054FD38 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		A2B68A2777860FF284E2AF9D /* Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-ThinkNews-ThinkNewsUITests/Pods-ThinkNews-ThinkNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E969A423D6FE593F8FB14F2E /* Pods-ThinkNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkNewsTests.debug.xcconfig"; path = "Target Support Files/Pods-ThinkNewsTests/Pods-ThinkNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 				82A02A6225775E4200988E01 /* Assets.xcassets */,
 				82A02A6725775E4200988E01 /* Info.plist */,
 				82A02A6825775E4200988E01 /* main.m */,
+				82DA6B31258A0F080054FD38 /* ListViewController.h */,
+				82DA6B32258A0F080054FD38 /* ListViewController.m */,
 			);
 			path = ThinkNews;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 			files = (
 				82A02A5E25775E4000988E01 /* ViewController.m in Sources */,
 				82A02A5825775E4000988E01 /* AppDelegate.m in Sources */,
+				82DA6B33258A0F080054FD38 /* ListViewController.m in Sources */,
 				8202091F2588A160007F8AFE /* TYCyclePagerViewCell.m in Sources */,
 				82A02A6925775E4200988E01 /* main.m in Sources */,
 				82A02A5B25775E4000988E01 /* SceneDelegate.m in Sources */,

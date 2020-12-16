@@ -11,6 +11,7 @@
 #import <TYCyclePagerView/TYPageControl.h>
 #import <WMZDialog/WMZDialog.h>
 #import "view/TYCyclePagerViewCell.h"
+#import "ListViewController.h"
 
 @interface ViewController ()
 
@@ -41,9 +42,6 @@
 #pragma mark - init
 
 -(void) initView {
-    
-    UIViewController *controller = [UIApplication sharedApplication].keyWindow.rootViewController;
-
     
     [self initPagerView];
     [self initPageControl];
@@ -253,6 +251,10 @@
     UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* _Nonnull action) {
         //button click event
         NSLog(@"Dialog OK button click");
+        
+        ListViewController* view = [[ListViewController alloc] init];
+        UINavigationController *navi = (UINavigationController*) [UIApplication sharedApplication].keyWindow.rootViewController;
+        [navi pushViewController:view animated:YES];
 
     }];
 
