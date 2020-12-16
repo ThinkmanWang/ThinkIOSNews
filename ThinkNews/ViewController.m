@@ -25,11 +25,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.preferredContentSize = CGSizeMake((self.view.frame.size.width / 100) * 65, (self.view.frame.size.height / 100) * 65);
-
     
     NSLog(@"viewDidLoad");
 //    [self initButton];
+    
+    [self initView];
+}
+
+#pragma mark - init
+
+-(void) initView {
     
     [self addPagerView];
     [self addPageControl];
@@ -37,8 +42,6 @@
     
     [self initButton];
 }
-
-#pragma mark - init
 
 -(void) initButton {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
