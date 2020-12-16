@@ -25,6 +25,7 @@
     ViewController *controller = [[ViewController alloc] init];
     controller.view.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = controller;
+//    self.window.rootViewController.preferredContentSize = CGSizeMake(600, 800);
     [self.window makeKeyAndVisible];
 }
 

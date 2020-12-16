@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <TYCyclePagerView/TYCyclePagerView.h>
 
-@interface ViewController : UIViewController {
+@interface ViewController <TYCyclePagerViewDataSource, TYCyclePagerViewDelegate> : UIViewController {
 }
 
 -(void) zoomInAction:(id)sender;

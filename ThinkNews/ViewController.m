@@ -12,7 +12,7 @@
 #import <WMZDialog/WMZDialog.h>
 #import "view/TYCyclePagerViewCell.h"
 
-@interface ViewController () <TYCyclePagerViewDataSource, TYCyclePagerViewDelegate>
+@interface ViewController () 
 
 @property (nonatomic, strong) TYCyclePagerView *pagerView;
 @property (nonatomic, strong) TYPageControl *pageControl;
@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.preferredContentSize = CGSizeMake((self.view.frame.size.width / 100) * 65, (self.view.frame.size.height / 100) * 65);
+
     
     NSLog(@"viewDidLoad");
 //    [self initButton];
