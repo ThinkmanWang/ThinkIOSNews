@@ -32,6 +32,8 @@
     [self addPagerView];
     [self addPageControl];
     [self loadData];
+    
+    [self initButton];
 }
 
 #pragma mark - init
@@ -39,7 +41,7 @@
 -(void) initButton {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
-    btn.frame = CGRectMake(0, 100, 90, 35);
+    btn.frame = CGRectMake(0, 0, 90, 35);
     [btn setTitle:@"ZoomIn" forState:UIControlStateNormal];
     [btn setTitle:@"ZoomIn" forState:UIControlStateHighlighted];
     [btn addTarget:self action:@selector(onBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -178,23 +180,23 @@
 //    [super didReceiveMemoryWarning];
 //    // Dispose of any resources that can be recreated.
 //}
-//
-//-(void) onBtnClicked:(id)sender {
-//    NSLog(@"On button click");
-//
-//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"I'm Title" message:@"I'm a Message" preferredStyle:UIAlertControllerStyleAlert];
-//
-//    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* _Nonnull action) {
-//        //button click event
-//        NSLog(@"Dialog OK button click");
-//
-//    }];
-//
-//    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
-//    [alert addAction:cancel];
-//    [alert addAction:ok];
-//
-//    [self presentViewController:alert animated:YES completion:nil];
-//}
+
+-(void) onBtnClicked:(id)sender {
+    NSLog(@"On button click");
+
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"I'm Title" message:@"I'm a Message" preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* _Nonnull action) {
+        //button click event
+        NSLog(@"Dialog OK button click");
+
+    }];
+
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 @end
