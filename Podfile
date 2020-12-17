@@ -10,7 +10,8 @@ target 'ThinkNews' do
   pod 'TYCyclePagerView'
   pod 'YTKNetwork'
   pod 'WMZDialog',inhibit_warnings: true
-
+  pod 'SDAutoLayout'
+  pod 'Masonry'
 
   target 'ThinkNewsTests' do
     inherit! :search_paths

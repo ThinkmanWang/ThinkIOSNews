@@ -11,6 +11,7 @@
 		6A0A119D2D2807665738691C /* Pods_ThinkNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7536E4E21384EF0A75B39DCC /* Pods_ThinkNews.framework */; };
 		8202091F2588A160007F8AFE /* TYCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8202091E2588A160007F8AFE /* TYCyclePagerViewCell.m */; };
 		820209242588B4A9007F8AFE /* img in Resources */ = {isa = PBXBuildFile; fileRef = 820209232588B4A9007F8AFE /* img */; };
+		82536D76258B4E320096B395 /* RecyclerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82536D75258B4E320096B395 /* RecyclerViewController.m */; };
 		82A02A5825775E4000988E01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5725775E4000988E01 /* AppDelegate.m */; };
 		82A02A5B25775E4000988E01 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5A25775E4000988E01 /* SceneDelegate.m */; };
 		82A02A5E25775E4000988E01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A02A5D25775E4000988E01 /* ViewController.m */; };
@@ -50,6 +51,8 @@
 		8202091D2588A160007F8AFE /* TYCyclePagerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYCyclePagerViewCell.h; sourceTree = "<group>"; };
 		8202091E2588A160007F8AFE /* TYCyclePagerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYCyclePagerViewCell.m; sourceTree = "<group>"; };
 		820209232588B4A9007F8AFE /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		82536D74258B4E320096B395 /* RecyclerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecyclerViewController.h; path = pages/RecyclerViewController.h; sourceTree = "<group>"; };
+		82536D75258B4E320096B395 /* RecyclerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecyclerViewController.m; path = pages/RecyclerViewController.m; sourceTree = "<group>"; };
 		82A02A5325775E4000988E01 /* ThinkNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82A02A5625775E4000988E01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82A02A5725775E4000988E01 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +125,15 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		82536D73258B4E0F0096B395 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				82536D74258B4E320096B395 /* RecyclerViewController.h */,
+				82536D75258B4E320096B395 /* RecyclerViewController.m */,
+			);
+			name = pages;
+			sourceTree = "<group>";
+		};
 		82A02A4A25775E4000988E01 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		82A02A5525775E4000988E01 /* ThinkNews */ = {
 			isa = PBXGroup;
 			children = (
+				82536D73258B4E0F0096B395 /* pages */,
 				820209232588B4A9007F8AFE /* img */,
 				8202091C2588A116007F8AFE /* view */,
 				82A02A5625775E4000988E01 /* AppDelegate.h */,
@@ -433,6 +446,7 @@
 				82DA6B33258A0F080054FD38 /* ListViewController.m in Sources */,
 				8202091F2588A160007F8AFE /* TYCyclePagerViewCell.m in Sources */,
 				82A02A6925775E4200988E01 /* main.m in Sources */,
+				82536D76258B4E320096B395 /* RecyclerViewController.m in Sources */,
 				82A02A5B25775E4000988E01 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

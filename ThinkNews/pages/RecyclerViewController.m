@@ -1,49 +1,33 @@
 //
-//  ListViewController.m
+//  RecyclerViewController.m
 //  ThinkNews
 //
-//  Created by 王晓丰 on 2020/12/16.
+//  Created by 王晓丰 on 2020/12/17.
 //
 
-#import "ListViewController.h"
-#import <AFNetworking/AFNetworking.h>
-#include <Masonry/Masonry.h>
+#import "RecyclerViewController.h"
+#import <Masonry/Masonry.h>
 
-@interface ListViewController ()
-@property (nonatomic, strong) UILabel* m_labelHello;
+@interface RecyclerViewController ()
 @property (nonatomic, strong) UIButton* m_btnBack;
 @end
 
-@implementation ListViewController
+@implementation RecyclerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self initView];
-    [self initBackButton];
 }
+
 
 #pragma mark - init
 
-- (void) initView {
+-(void) initView {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self initLabel];
-}
-
-- (void) initLabel {
-    self.m_labelHello = [[UILabel alloc] init];
-    self.m_labelHello.text = @"FXXXXK";
-    
-    self.m_labelHello.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    [self.view addSubview:self.m_labelHello];
-    
-    [self.m_labelHello mas_makeConstraints:^(MASConstraintMaker* make) {
-        make.top.equalTo(self.view.mas_top);
-        make.left.equalTo(self.view.mas_left);
-    }];
+    [self initBackButton];
 }
 
 -(void) initBackButton {
@@ -56,8 +40,8 @@
     [self.view addSubview:self.m_btnBack];
     
     [self.m_btnBack mas_makeConstraints:^(MASConstraintMaker* make) {
-        make.top.equalTo(self.m_labelHello.mas_bottom);
-        make.left.equalTo(self.m_labelHello.mas_left);
+        make.top.equalTo(self.view.mas_top);
+        make.left.equalTo(self.view.mas_left);
     }];
 }
 
@@ -67,5 +51,15 @@
     UINavigationController *navi = (UINavigationController*) [UIApplication sharedApplication].keyWindow.rootViewController;
     [navi popViewControllerAnimated:YES];
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

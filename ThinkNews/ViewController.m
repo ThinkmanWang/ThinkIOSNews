@@ -12,6 +12,8 @@
 #import <WMZDialog/WMZDialog.h>
 #import "view/TYCyclePagerViewCell.h"
 #import "ListViewController.h"
+#import <Masonry/Masonry.h>
+#import "pages/RecyclerViewController.h"
 
 @interface ViewController ()
 
@@ -21,9 +23,7 @@
 @property (nonatomic, strong) TYPageControl *pageControl;
 @property (nonatomic, strong) NSArray *datas;
 
-@property (nonatomic, strong) UIButton *leftButton;
-@property (nonatomic, strong) UIButton *rightButton;
-@property (nonatomic, strong) UITextField *textfield;
+@property (nonatomic, strong) UIButton* m_pbtnListView;
 
 @end
 
@@ -52,72 +52,6 @@
 
 -(void) initScrollView {
 //    self.m_scrollMain = [[UIScrollView alloc] ]
-}
-
--(void) autoLayoutTest {
-    /*1. Create leftButton and add to our view*/
-    self.leftButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.leftButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.leftButton setTitle:@"LeftButton" forState:UIControlStateNormal];
-    [self.view addSubview:self.leftButton];
-
-    /* 2. Constraint to position LeftButton's X*/
-    NSLayoutConstraint *leftButtonXConstraint = [NSLayoutConstraint
-        constraintWithItem:self.leftButton attribute:NSLayoutAttributeCenterX
-        relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:
-        NSLayoutAttributeCenterX multiplier:1.0 constant:-60.0f];
-
-    /* 3. Constraint to position LeftButton's Y*/
-    NSLayoutConstraint *leftButtonYConstraint = [NSLayoutConstraint constraintWithItem:self.leftButton attribute: NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute: NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f];
-
-    /* 4. Add the constraints to button's superview*/
-    [self.view addConstraints:@[ leftButtonXConstraint, leftButtonYConstraint]];
-
-    /*5. Create rightButton and add to our view*/
-    self.rightButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.rightButton.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.rightButton setTitle:@"RightButton" forState:UIControlStateNormal];
-    [self.view addSubview:self.rightButton];
-
-    /*6. Constraint to position RightButton's X*/
-    NSLayoutConstraint *rightButtonXConstraint = [NSLayoutConstraint
-        constraintWithItem:self.rightButton attribute:NSLayoutAttributeCenterX
-        relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:
-        NSLayoutAttributeCenterX multiplier:1.0 constant:60.0f];
-
-    /*7. Constraint to position RightButton's Y*/
-//    rightButtonXConstraint.priority = UILayoutPriorityDefaultHigh;
-    NSLayoutConstraint *centerYMyConstraint = [NSLayoutConstraint constraintWithItem:self.rightButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f];
-    [self.view addConstraints:@[centerYMyConstraint, rightButtonXConstraint]];
-
-    //8. Add Text field
-    self.textfield = [[UITextField alloc]initWithFrame:
-        CGRectMake(0, 150, 100, 30)];
-        self.textfield.borderStyle = UITextBorderStyleRoundedRect;
-    self.textfield.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.textfield];
-
-    //9. Text field Constraints
-    NSLayoutConstraint *textFieldTopConstraint = [NSLayoutConstraint
-        constraintWithItem:self.textfield attribute:NSLayoutAttributeTop
-        relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.view
-        attribute:NSLayoutAttributeTop multiplier:1.0 constant:60.0f];
-    NSLayoutConstraint *textFieldBottomConstraint = [NSLayoutConstraint
-        constraintWithItem:self.textfield attribute:NSLayoutAttributeTop
-        relatedBy:NSLayoutRelationGreaterThanOrEqual toItem:self.rightButton
-        attribute:NSLayoutAttributeTop multiplier:0.8 constant:-60.0f];
-    NSLayoutConstraint *textFieldLeftConstraint = [NSLayoutConstraint
-        constraintWithItem:self.textfield attribute:NSLayoutAttributeLeft
-        relatedBy:NSLayoutRelationEqual toItem:self.view attribute:
-        NSLayoutAttributeLeft multiplier:1.0 constant:30.0f];
-    NSLayoutConstraint *textFieldRightConstraint = [NSLayoutConstraint
-        constraintWithItem:self.textfield attribute:NSLayoutAttributeRight
-        relatedBy:NSLayoutRelationEqual toItem:self.view attribute:
-        NSLayoutAttributeRight multiplier:1.0 constant:-30.0f];
-    
-    [self.view addConstraints:@[textFieldBottomConstraint ,
-        textFieldLeftConstraint, textFieldRightConstraint,
-        textFieldTopConstraint]];
 }
 
 -(void) initButton {
@@ -150,7 +84,19 @@
     
     [self.view addConstraints:@[buttonXConstraint, buttonYConstraint]];
     
+    //list view button
+    self.m_pbtnListView = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
+    self.m_pbtnListView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.m_pbtnListView setTitle:@"LIST VIEW TEST" forState:UIControlStateNormal];
+    [self.m_pbtnListView addTarget:self action:@selector(onListClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:self.m_pbtnListView];
+    
+    [self.m_pbtnListView mas_makeConstraints:^(MASConstraintMaker* make) {
+        make.top.equalTo(btn1.mas_bottom);
+        make.left.equalTo(btn1.mas_left);
+    }];
 }
 
 - (void)initPagerView {
@@ -263,6 +209,14 @@
     [alert addAction:ok];
 
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+-(void) onListClicked:(id)sender {
+    NSLog(@"onListClicked");
+        
+    RecyclerViewController* view = [[RecyclerViewController alloc] init];
+    UINavigationController *navi = (UINavigationController*) [UIApplication sharedApplication].keyWindow.rootViewController;
+    [navi pushViewController:view animated:YES];
 }
 
 @end
