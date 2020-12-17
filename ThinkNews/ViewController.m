@@ -124,8 +124,8 @@
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 
     btn1.translatesAutoresizingMaskIntoConstraints = NO;
-    [btn1 setTitle:@"ZoomIn" forState:UIControlStateNormal];
-    [btn1 setTitle:@"ZoomIn" forState:UIControlStateHighlighted];
+    [btn1 setTitle:@"NEXT" forState:UIControlStateNormal];
+    [btn1 setTitle:@"NEXT" forState:UIControlStateHighlighted];
     [btn1 addTarget:self action:@selector(onBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:btn1];
